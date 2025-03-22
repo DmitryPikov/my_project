@@ -15,7 +15,8 @@ git clone https://github.com/DmitryPikov/my_project.git
 ```
 pip install -r requirements.txt
 ```
-3. Тестирование
+4. Добавлен модуль generators.py, который содержит функции для работы с массивами транзакций.
+5. Тестирование
 ```
 pytest
 ```
@@ -23,5 +24,6 @@ pytest
 - `masks`: функции `get_mask_card_number` и `get_mask_account`.
 - `widget`: функции `mask_account_card` и `get_data`.
 - `processing`: функции `filter_by_state` и `sort_by_date`.
+- `generators`: функции `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
 
 Покрытие тестами составляет более 80% кода проекта.
