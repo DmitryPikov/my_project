@@ -49,7 +49,7 @@ def test_sort_by_date_reverse(list_dictionary: list) -> None:
         (None, "Не корректные данные"),
     ],
 )
-def test_sort_date_incorrect_value(list_dictionary: list, expected: str):
+def test_sort_date_incorrect_value(list_dictionary: list, expected: str) -> None:
     with pytest.raises(Exception) as exc_info:
         sort_by_date(list_dictionary)
 
