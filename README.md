@@ -16,7 +16,8 @@ git clone https://github.com/DmitryPikov/my_project.git
 pip install -r requirements.txt
 ```
 4. Добавлен модуль generators.py, который содержит функции для работы с массивами транзакций.
-5. Тестирование
+5. Добавлен модуль utils.py, обрабатывает JSON файл и external_api.py, который делает запрос по API.
+6. Тестирование
 ```
 pytest
 ```
@@ -25,5 +26,7 @@ pytest
 - `widget`: функции `mask_account_card` и `get_data`.
 - `processing`: функции `filter_by_state` и `sort_by_date`.
 - `generators`: функции `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
+- `utils`: функцию `open_json_file`.
+- `external_api`: функцию `converting_transaction`.
 
 Покрытие тестами составляет более 80% кода проекта.
