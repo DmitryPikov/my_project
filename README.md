@@ -17,7 +17,8 @@ pip install -r requirements.txt
 ```
 4. Добавлен модуль generators.py, который содержит функции для работы с массивами транзакций.
 5. Добавлен модуль decorators.py, который содержит функции для вывода лога в консоль или файл.
-5. Тестирование
+6. Добавлен модуль utils.py, обрабатывает JSON файл и external_api.py, который делает запрос по API.
+7. Тестирование
 ```
 pytest
 ```
@@ -27,5 +28,7 @@ pytest
 - `processing`: функции `filter_by_state` и `sort_by_date`.
 - `generators`: функции `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
 - `decorators`: функции `log` и `write_log`.
+- `utils`: функцию `open_json_file`.
+- `external_api`: функцию `converting_transaction`.
 
 Покрытие тестами составляет более 80% кода проекта.
