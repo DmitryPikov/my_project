@@ -4,7 +4,7 @@ from typing import Any, Generator
 def filter_by_currency(transactions: list, currency: str) -> Generator[Any, Any, None]:
     """Функция фильтрует транзакции по заданной валюте и возвращает итератор"""
     for transaction in transactions:
-        if transaction.get("operationAmount").get("currency").get("code") == currency:
+        if transaction.get("operationAmount", {}).get("currency", {}).get("code", {}) == currency:
             yield transaction
 
 
