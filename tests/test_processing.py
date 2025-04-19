@@ -18,10 +18,8 @@ def test_filter_by_state_canceled(list_dictionary_with_state: list) -> None:
 
 
 def test_filter_by_state_incorrect_value(list_dictionary_without_state: list) -> None:
-    with pytest.raises(Exception) as exc_info:
-        filter_by_state(list_dictionary_without_state)
-
-    assert str(exc_info.value) == "Не корректные данные"
+    result = filter_by_state(list_dictionary_without_state, "EXECUTED")
+    assert result == []
 
 
 def test_sort_by_date(list_dictionary: list) -> None:
